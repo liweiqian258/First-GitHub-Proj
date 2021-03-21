@@ -27,7 +27,7 @@ public class GoodsController {
         return result;
     }
 
-    @PostMapping(value="/v/getGoods")
+    @PostMapping(value="/v/getGoods/1")
     public DoubleResult sendQgGoodsMessage(String goodsId,String token)throws Exception{
         DoubleResult doubleResult=goodsService.getGoods (goodsId,token);
         return doubleResult;
